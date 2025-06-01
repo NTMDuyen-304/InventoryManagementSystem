@@ -24,4 +24,4 @@ CREATE TABLE IF NOT EXISTS account (
     password VARCHAR(100) NOT NULL,
     display_name VARCHAR(50),
     title VARCHAR(50)
-);a
+);

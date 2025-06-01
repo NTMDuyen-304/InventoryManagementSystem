@@ -1,0 +1,40 @@
+<!-- Sidebar -->
+<div
+  id="sidebar"
+  class="d-flex flex-column flex-shrink-0 text-white"
+  th:fragment="sidebar"
+>
+  <div class="p-3 d-flex align-items-center justify-content-between">
+    <img th:src="@{/images/white-logo.png}" class="img-fluid img" alt="Logo" />
+    <span class="text-white fw-bold fs-4">Inventory Management</span>
+  </div>
+  <hr class="mt-0 mb-2" />
+  <ul class="nav flex-column mb-auto px-2">
+    <li class="nav-item">
+      <a th:href="@{/home}" class="nav-link sidebar-link py-3 active">
+        <iconify-icon
+          icon="mage:dashboard-2-fill"
+          width="32"
+          height="32"
+        ></iconify-icon>
+        Dashboard
+      </a>
+    </li>
+    <li class="nav-item">
+      <a th:href="@{/products}" class="nav-link sidebar-link py-3 active">
+        <iconify-icon icon="ix:product" width="32" height="32"></iconify-icon>
+        Products
+      </a>
+    </li>
+    <li class="nav-item">
+      <a th:href="@{/movements}" class="nav-link sidebar-link py-3 active">
+        <iconify-icon
+          icon="ic:twotone-inventory-2"
+          width="32"
+          height="32"
+        ></iconify-icon>
+        Stock Movements
+      </a>
+    </li>
+  </ul>
+</div>
